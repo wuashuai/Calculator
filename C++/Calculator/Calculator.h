@@ -9,17 +9,17 @@ class Calculator{
 	public:
 		Calculator();
         ~Calculator();
-		double numPadPressed(string s);
+		string numPadPressed(string s);
 		bool check(string current);
 		string reverse(string current);
 		void clearAll();
         void clear();
 		string calculate(string x, string y, string op);
-		
+
 	private:
 		string preValue;
     	string current;
     	string op;
     	double pos;
-    	double show;
+    	string show;
 };

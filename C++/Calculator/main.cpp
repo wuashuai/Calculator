@@ -21,7 +21,7 @@ int main() {
 
     for(int i = 0 ; i < 8; i++){
         string cur = input[i];
-        cout << i << "    " << c.numPadPressed(cur) << endl;
+        cout << cur << "    " << c.numPadPressed(cur) << endl;
     }
 
 }
