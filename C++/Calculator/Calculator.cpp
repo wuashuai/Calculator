@@ -37,8 +37,8 @@ string Calculator::numPadPressed(string s) {
         clearAll();
     }else if(s == "+/-"){
         if(pos == 1) {
-                current = reverse(current);
-                show = current;
+            current = reverse(current);
+            show = current;
         }else{
             preValue = reverse(preValue);
             show = preValue;
@@ -86,8 +86,10 @@ string Calculator::numPadPressed(string s) {
 }
 
 bool Calculator::check(string current){
-    return current.find(".");
-
+    
+    if(current.find('.') != string::npos)
+        return true;
+    return false;
 }
 
 string Calculator::reverse(string current){
@@ -155,5 +157,3 @@ string Calculator::calculate(string x, string y, string op){
     return str;
 //    return res + "";
 }
-
-
