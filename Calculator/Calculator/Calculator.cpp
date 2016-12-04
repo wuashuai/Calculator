@@ -6,7 +6,7 @@
 //  Copyright © 2016 wuzhongru. All rights reserved.
 //
 
-#include "Calculator.mm"
+#include "Calculator.h"
 #include <iostream>
 #include <string>
 #include <stdlib.h>
